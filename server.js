@@ -30,7 +30,9 @@ let transporter = nodemailer.createTransport({
 });
 
 
-
+app.get("/", (req,res)=>{
+  res.send("working")
+})
 
 app.post("/", function (req, res) {
   let data = req.body;
